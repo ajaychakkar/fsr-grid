@@ -1,0 +1,16 @@
+<div class="fsr-grid-header-cell" >
+  <div>
+    <div class="fsr-grid-header-cell-title-wrapper">
+      <div class="fsr-grid-header-cell-title" [ngClass]="{'fsrDraggableColumn': colDef.draggable }" (click)="sortChange()" title="{{colDef.title}}">{{colDef.title}}</div>
+      <span *ngIf="colDef.sortable" class="fsr-sortable-icon">
+        <i class="fa fa-caret-down fa-light" *ngIf="colDef.sort === 'asc'" title="Ascending"></i>
+        <i class="fa fa-caret-up fa-light" *ngIf="colDef.sort === 'desc'" title="Descending"></i>
+      </span>
+  </div>
+  </div>
+
+  <div class="fsr-header-filter">
+    <ng-container fsrGridContainer></ng-container>
+  </div>
+  <div class="resizable-cell" [ngClass]="{'fsr-resize-handle': colDef.resizable}"></div>
+</div>

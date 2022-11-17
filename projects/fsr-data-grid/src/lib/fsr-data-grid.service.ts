@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class FsrDataGridService {
 
   constructor() { }
+
+  getAllSelectedRows() {
+    console.log('inside all');
+  }
 }

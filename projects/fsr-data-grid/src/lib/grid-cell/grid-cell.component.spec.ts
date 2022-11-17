@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FsrDataGridComponent } from './fsr-data-grid.component';
+import { GridCellComponent } from './grid-cell.component';
 
-describe('FsrDataGridComponent', () => {
-  let component: FsrDataGridComponent;
-  let fixture: ComponentFixture<FsrDataGridComponent>;
+describe('GridCellComponent', () => {
+  let component: GridCellComponent;
+  let fixture: ComponentFixture<GridCellComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FsrDataGridComponent ]
+      declarations: [ GridCellComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FsrDataGridComponent);
+    fixture = TestBed.createComponent(GridCellComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

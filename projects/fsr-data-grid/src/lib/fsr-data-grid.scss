@@ -1,0 +1,119 @@
+.fsr-grid-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .fsr-grid-body-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+
+    .fsr-header-rows-action-container,
+    .fsr-viewport-rows-action-container {
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+
+      .actionable {
+        width: 30px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .fsr-header-row {
+    background: var(--grid-header-background-color);
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    align-items: center;
+    height: 70px;
+    flex-direction: row;
+    border-color: var(--grid-row-border-color);
+    margin-bottom: 3px;
+
+    fsr-grid-column {
+      display: flex;
+      padding: 5px 10px;
+      flex-direction: column;
+      position: relative;
+      height: 60px;
+      overflow: hidden;
+      font-size: 0.8em;
+      border-color: var(--grid-row-border-color);
+      &.dragging {
+        z-index: 2;
+        background: var(--grid-header-background-color);
+        cursor: move;
+      }
+    }
+  }
+
+  .fsr-viewport-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .fsr-viewport-rows {
+    flex-direction: column;
+
+    .fsr-viewport-row-data {
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      margin-bottom: 3px;
+      height: 40px;
+      background: var(--grid-row-even-background-color);
+    }
+
+    fsr-grid-row {
+      height: 40px;
+      flex-direction: row;
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      flex: 0 0 auto;
+      background: var(--grid-row-even-background-color);
+      &.fsr-row-selected {
+        background: #f9f9f9;
+      }
+    }
+  }
+  .fsr-shimmer-wrapper {
+    overflow-x: auto;
+    .fsr-shimmer-row {
+      height: 40px;
+      display: flex;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 5px;
+      background: var(--grid-row-even-background-color);
+      .fsr-shimmer-row-cells {
+        flex-direction: row;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        .fsr-shimmer-row-cell {
+          padding: 0px 10px;
+          .bg-shimmer {
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+  .ps-30 {
+    padding-left: 30px;
+  }
+
+  .ps-60 {
+    padding-left: 60px;
+  }
+}
