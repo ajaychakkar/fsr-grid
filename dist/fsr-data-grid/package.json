@@ -1,0 +1,31 @@
+{
+  "name": "fsr-data-grid",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^12.1.0",
+    "@angular/core": "^12.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  },
+  "module": "fesm2015/fsr-data-grid.mjs",
+  "es2020": "fesm2020/fsr-data-grid.mjs",
+  "esm2020": "esm2020/fsr-data-grid.mjs",
+  "fesm2020": "fesm2020/fsr-data-grid.mjs",
+  "fesm2015": "fesm2015/fsr-data-grid.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/fsr-data-grid.mjs",
+      "es2020": "./fesm2020/fsr-data-grid.mjs",
+      "es2015": "./fesm2015/fsr-data-grid.mjs",
+      "node": "./fesm2015/fsr-data-grid.mjs",
+      "default": "./fesm2020/fsr-data-grid.mjs"
+    }
+  },
+  "sideEffects": false
+}
